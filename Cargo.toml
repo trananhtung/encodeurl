@@ -1,0 +1,25 @@
+[package]
+name = "encodeurl"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Encode a URL to a percent-encoded form, leaving already-encoded sequences (valid %XX escapes) intact. A faithful port of the `encodeurl` npm package. Safe, zero dependencies, no_std."
+documentation = "https://docs.rs/encodeurl"
+repository = "https://github.com/trananhtung/encodeurl"
+homepage = "https://github.com/trananhtung/encodeurl"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["url", "encode", "percent-encoding", "uri", "escape"]
+categories = ["web-programming", "encoding", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
